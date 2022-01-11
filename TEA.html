@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>The Tea Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                
+                <a href="index.html"><img src="images/logo.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="far fa-times-circle" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                    </ul>
+                </div>              
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>A Journey Of The Senses</h1>
+                <p>
+                    Tea is more than just a beverage. Its a link that connects us to the past and to ourselves.<br>With deep-rooted values in craftsmanship, innovation and art & beauty, we blend techniques, <br>stories, people, companies and ideas to bring to you the finest tea in the world.
+                </p>
+                <a href="" class="hrbtn">Visit Us to Know More</a>
+            </div>
+        </section>
+
+        <!-- products -->
+        <section class="products">
+            <h1>
+                Our Most Selling Products
+            </h1>
+            <p>Explore Your Palate</p>
+
+            <div class="row">
+                <div class="pro-col">
+                    <img src="images/2.BreakfastInParis_82bb1a14-72a7-43ae-a4c5-3751f7b3122c_720x.jpg">
+                    <div class="layer">
+                        <h3>Breakfast In Paris</h3>
+                    </div>
+                </div>  
+                <div class="pro-col">
+                    <img src="images/2.DoubleBergEarlGrey_720x.jpg">
+                    <div class="layer">
+                        <h3>EARL GREY</h3>
+                    </div>
+                </div>
+                <div class="pro-col">
+                    <img src="images/2.MeyerLemon_720x.jpg">
+                    <div class="layer">
+                        <h3>MEYER LEMON</h3>
+                    </div>
+                </div>
+                <div class="pro-col">
+                    <img src="images/1DecafChaiSpice_720x.jpg">
+                    <div class="layer">
+                        <h3>DECAF CHAI SPICE</h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        
+        <!-- Why Our tea -->
+
+        <section class="why">
+            
+            <h1>WHY OUR TEA?</h1>
+            <div class="row1">
+                <div class="facilities-col">
+                    <img src="images/1.jpg">
+                    <h2>ALL NATURAL</h2>
+                    <p>What makes a cup of tea a cup of tea? The leaves? The water? The love poured into it?Perhaps. We understand the magic that makes up a delightful cuppa which is why we use only the best tea leaves and premium plant ingredients to create our ALL NATURAL tea blends. Free from artificial flavours or harmful additives, we guarantee 100% natural teas.</p>                    
+                </div>
+                <div class="facilities-col">
+                    <img src="images/2.jpg">
+                    <h2>SOURCE</h2>
+                    <p>We believe in the magic of freshly plucked leaves from the tea gardens. Find out what it makes to be Fresh from Source. You'll taste the difference with our teas that are sourced directly from the gardens of Darjeeling, Assam and Nepal. We ensure that you get only the finest quality teas packed in vaccum sealed pouches, keeping the freshness inact for a longer time.</p>                    
+                </div>
+                <div class="facilities-col">
+                    <img src="images/3.jpg">
+                    <h2>HEALTHY</h2>
+                    <p>Have you ever sat down and wondered why there is more to tea than a beverage? The Tea Company will give you the answer. Tea is a healthy, delicious, and calming drink that is rich in antioxidantws and polyphenols. Combining the healthy benifits of tea with the power of Ayurveda, out blends embrace the essence of a healthy lifestyle.</p>                    
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <h1>What Our Customers Say</h1>
+            <div class="row">
+                <div class="test-col">
+                    <img src="images/c1.jpg">
+                    <div>
+                        <p>"My choice when it comes to having my Par-Tea"</p>
+                        <h3>Suzy Brown</h3>
+                    </div>
+                </div>
+                <div class="test-col">
+                    <img src="images/c2.jpg">
+                    <div>
+                        <p>"Was really impressed with the kind of tea's I recieved, amazing aroma & taste."</p>
+                        <h3>Marco Pilo</h3>
+                    </div>
+                </div>
+                <div class="test-col">
+                    <img src="images/c3.jpg">
+                    <div>
+                        <p>"Teas are fresh and all natural, it's great for my detox regime."</p>
+                        <h3>Amanda Thor</h3>
+                    </div>
+                </div>
+                <div class="test-col">
+                    <img src="images/c4.jpg">
+                    <div>
+                        <p>"Amazing collection of teas! Would definately reccomend it!"</p>
+                        <h3>Josh Park</h3>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+
+
+
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+            var navLinks= document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
